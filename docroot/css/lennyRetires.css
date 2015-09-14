@@ -1,0 +1,237 @@
+/*css resets per Eric Meyer*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color: #fff;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    line-height: 1;
+    background-color: #E8CAA4;
+    font-family: sans-serif;
+    font-weight: 100;
+    -webkit-overflow-scrolling: touch;
+    transition: background-color 2.00s linear;
+      -moz-transition: background-color 2.00s linear;
+      -webkit-transition: background-color 2.00s linear;
+      -o-transition: background-color 2.00s linear;
+}
+#page-overlay {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: #E8CAA4;
+}
+input[type="password"] {
+    border-radius: 4px;
+    width: 240px;
+    height: 20px;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+input[type="button"] {
+    border-radius: 4px;
+    border: 1px solid #CC2A41;
+    width: 248px;
+    height: 28px;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -70px;
+    margin: auto;
+    background-color: #FFF;
+    color: #CC2A41;
+    cursor: pointer;
+}
+#retirement-header {
+    color: #64908A;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    max-width: 90%;
+    cursor: pointer;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+      -moz-user-select: none;     /* Firefox all */
+      -ms-user-select: none;      /* IE 10+ */
+      user-select: none;
+}
+h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+p {
+    color: #351330;
+    margin: 13px 5px;
+}
+#lenny-image {
+    margin: 20px auto;
+}
+#lenny-image img {
+    height: auto;
+    max-height: 400px;
+    max-width: 90%;
+    margin: auto;
+    display: block;
+}
+#cd-menu {
+    margin: 10px 8%;
+    text-align: center;
+}
+.cd-buttons {
+    display: inline-block;
+    border: 2px solid #CC2A41;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0px;
+    width: 24%;
+    transition: background-color 0.45s linear;
+      -moz-transition: background-color 0.45s linear;
+      -webkit-transition: background-color 0.45s linear;
+      -o-transition: background-color 0.45s linear;
+}
+.cd-buttons p {
+    color: #CC2A41;
+    transition: color 0.45s linear;
+      -moz-transition: color 0.45s linear;
+      -webkit-transition: color 0.45s linear;
+      -o-transition: color 0.45s linear;
+}
+.cd-buttons:hover, .cd-buttons:focus {
+    background-color: #CC2A41;
+    transition: background-color 0.45s linear;
+      -moz-transition: background-color 0.45s linear;
+      -webkit-transition: background-color 0.45s linear;
+      -o-transition: background-color 0.45s linear;
+}
+.cd-buttons:hover p, .cd-buttons:focus p {
+    color: #FFF;
+    transition: color 0.45s linear;
+      -moz-transition: color 0.45s linear;
+      -webkit-transition: color 0.45s linear;
+      -o-transition: color 0.45s linear;
+}
+#total-time-left {
+    text-align: center;
+}
+#total-time-left p {
+    display: inline-block;
+    margin: 0;
+    font-weight: 500;
+}
+.clock-boxes {
+    display: inline-block;
+}
+.clock-dials {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    background: #4c4c4c;
+    background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #4c4c4c), color-stop(12%, #595959), color-stop(25%, #666666), color-stop(39%, #474747), color-stop(50%, #2c2c2c), color-stop(51%, #000000), color-stop(60%, #111111), color-stop(76%, #2b2b2b), color-stop(91%, #1c1c1c), color-stop(100%, #131313));
+    background: -webkit-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    background: -o-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    background: -ms-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    background: linear-gradient(to bottom, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
+}
+@media screen and (max-width: 1000px) {
+    #retirement-header {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #retirement-header {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 750px) {
+    #cd-menu {
+        margin: 10px 2%;
+    }
+    #retirement-header {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 650px) {
+    #lenny-image img {
+        max-height: 300px;
+    }
+}
+@media screen and (max-width: 650px) {
+    #retirement-header {
+        font-size: 25px;
+    }
+    .cd-buttons {
+        margin: 3px 0px;
+        width: 48%;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #lenny-image img {
+        max-height: 280px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #lenny-image img {
+        max-height: 230px;
+    }
+}
+@media screen and (max-width: 340px) {
+    #lenny-image img {
+        max-height: 190px;
+    }
+    .cd-buttons {
+        width: 90%;
+    }
+    .clock-boxes {
+        font-size: 14px;
+    }
+    .clock-dials {
+        font-size: 24px;
+    }
+}
