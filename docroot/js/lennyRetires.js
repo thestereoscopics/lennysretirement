@@ -136,7 +136,7 @@ $(document).ready(function() {
             switch (elId) {
                 case 'daysCounter':
 
-                    var htmlImageString = '<img src="../images/volcanicSunset.jpg" alt="Sunset Silhouettes on the volcano">';
+                    var htmlImageString = '<img src="docroot/images/volcanicSunset.jpg" alt="Sunset Silhouettes on the volcano">';
                     var htmlClockString =   '<div class="clock-boxes"><h2 class="clock-dials">' +
                                             timeLeftArray[0] + '</h2><p>Days</p></div>' +
                                             '<div class="clock-boxes"><h2 class="clock-dials">' +
@@ -154,7 +154,7 @@ $(document).ready(function() {
 
                     break;
                 case 'hoursCounter':
-                    var htmlImageString = '<img src="../images/viklenWaterfalling.jpg" alt="Lenny and Vikie on Maui">';
+                    var htmlImageString = '<img src="docroot/images/viklenWaterfalling.jpg" alt="Lenny and Vikie on Maui">';
                     var htmlClockString = '<div class="clock-boxes"><h2 class="clock-dials">'+hoursUntilRetiring+'</h2><p>Total Hours</p></div>';
                     var timeLeftEl = '#total-time-left';
 
@@ -165,7 +165,7 @@ $(document).ready(function() {
 
                     break;
                 case 'minutesCounter':
-                    var htmlImageString = '<img src="../images/viklenTopOfTheWorld.jpg" alt="Lenny and Vikie on Haleakalā">';
+                    var htmlImageString = '<img src="docroot/images/viklenTopOfTheWorld.jpg" alt="Lenny and Vikie on Haleakalā">';
                     var htmlClockString =   '<div class="clock-boxes"><h2 class="clock-dials">' +
                                             minutesUntilRetiring + '</h2><p>Total Minutes</p></div>';
                     var timeLeftEl = '#total-time-left';
@@ -177,7 +177,7 @@ $(document).ready(function() {
 
                     break;
                 case 'secondsCounter':
-                    var htmlImageString = '<img src="../images/vikLen.jpg" alt="Vikie and Lenny">';
+                    var htmlImageString = '<img src="docroot/images/vikLen.jpg" alt="Vikie and Lenny">';
                     var htmlClockString =   '<div class="clock-boxes"><h2 class="clock-dials">' +
                                             secondsUntilRetiring + '</h2><p>Total Seconds</p></div>';
                     var timeLeftEl = '#total-time-left';
@@ -235,23 +235,23 @@ $(document).ready(function() {
 
         switch (currentHeaderOpt) {
             case 0:
-                var htmlImageString = '<img src="../images/cadenceSunglasses.jpg" alt="Cadence in Sunglasses. Duh.">';
+                var htmlImageString = '<img src="docroot/images/cadenceSunglasses.jpg" alt="Cadence in Sunglasses. Duh.">';
                 fadeInAndOut(imageEl, htmlImageString);
                 break;
             case 1:
-                var htmlImageString = '<img src="../images/cjBeerList.jpg" alt="C&J Show Lenny a List of Portland\'s Necessay Fixes">';
+                var htmlImageString = '<img src="docroot/images/cjBeerList.jpg" alt="C&J Show Lenny a List of Portland\'s Necessay Fixes">';
                 fadeInAndOut(imageEl, htmlImageString);
                 break;
             case 2:
-                var htmlImageString = '<img src="../images/sandyPride.jpg" alt="Sandy, Pride, Apple and Sun!!">';
+                var htmlImageString = '<img src="docroot/images/sandyPride.jpg" alt="Sandy, Pride, Apple and Sun!!">';
                 fadeInAndOut(imageEl, htmlImageString);
                 break;
             case 3:
-                var htmlImageString = '<img src="../images/jerAndLenBeers.jpg" alt="Lenny and Jeremy Having Beers">';
+                var htmlImageString = '<img src="docroot/images/jerAndLenBeers.jpg" alt="Lenny and Jeremy Having Beers">';
                 fadeInAndOut(imageEl, htmlImageString);
                 break;
             case 4:
-                var htmlImageString = '<img src="../images/lennyTools.jpg" alt="Lenny Brings Tools to Portland">';
+                var htmlImageString = '<img src="docroot/images/lennyTools.jpg" alt="Lenny Brings Tools to Portland">';
                 fadeInAndOut(imageEl, htmlImageString);
                 break;
         }
@@ -269,7 +269,7 @@ $(document).ready(function() {
         //set clock interval to start
         countdownInterval = setInterval(function() {changeCountdown(1)}, 1000);
         //add first image
-        $('body').find('#lenny-image').html('<img src="../images/volcanicSunset.jpg" alt="Sunset Silhouettes on the volcano">');
+        $('body').find('#lenny-image').html('<img src="docroot/images/volcanicSunset.jpg" alt="Sunset Silhouettes on the volcano">');
     }
 
     //if return key is used pass value to passwordInput function
