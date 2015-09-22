@@ -9,7 +9,6 @@ $(document).ready(function() {
 
     //set up the difference between retirement and today in multiple formats
     function daysBetween( date1, date2 ) {
-        console.log(date1, date2);
         //Get 1 day in milliseconds
         var one_day    = 1000*60*60*24;
         var one_hour   = 1000*60*60;
@@ -205,8 +204,6 @@ $(document).ready(function() {
     //can change header, bg and days font
     function changeColor() {
         var backgroundColor   = randomColor();
-        //var headerFontColor = randomColor();
-        //var daysFont        = randomColor();
         $('body').css('background-color', backgroundColor);
         $('#page-overlay').css('background-color', backgroundColor);
     }
@@ -258,7 +255,7 @@ $(document).ready(function() {
 
         $(this).text(headerOptions[currentHeaderOpt]);
 
-        setTimeout(function(){$('#lenny-image').css('height', 'auto')}, 700);
+        setTimeout(function(){$('#lenny-image').css('height', 'auto')}, 2000);
         currentHeaderOpt++;
     });
 
