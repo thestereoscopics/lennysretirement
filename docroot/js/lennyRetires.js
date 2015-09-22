@@ -255,7 +255,7 @@ $(document).ready(function() {
 
         $(this).text(headerOptions[currentHeaderOpt]);
 
-        setTimeout(function(){$('#lenny-image').css('height', 'auto')}, 2000);
+        setTimeout(function(){$('#lenny-image').css('height', 'auto')}, 4000);
         currentHeaderOpt++;
     });
 
